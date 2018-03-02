@@ -423,7 +423,11 @@ function readAdlists()
 				{
 					exec('sudo pihole -a layout traditional');
 				}
+				
+				$success .= "The webUI settings have been updated";
+				break;
 
+			case "speedtestsave":
 				// todo Save Speedtest Schedule
 				if(isset($_POST["speedtestschedule"])){
 						exec('sudo pihole -a -s '.$_POST["speedtestschedule"]);
@@ -456,10 +460,7 @@ function readAdlists()
 					// # code...
 				}
 
-
-
-
-				$success .= "The webUI settings have been updated";
+				$success .= "The Speedtest settings have been updated";
 				break;
 
 			case "poweroff":
