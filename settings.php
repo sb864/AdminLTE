@@ -1042,7 +1042,7 @@ if (isset($_GET['tab']) && in_array($_GET['tab'], array("sysadmin", "blocklists"
                                                 </div>
                                             </div>
                                                 
-                                                <input type="hidden" name="field" value="webUI">
+                                                <input type="hidden" name="field" value="speedtestsave">
                                                 <input type="hidden" name="token" value="<?php echo $token ?>">
                                             </div>
                                         </div>
